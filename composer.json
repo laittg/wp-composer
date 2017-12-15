@@ -1,0 +1,25 @@
+{
+    "name": "wp-composer",
+    "description": "Wordpress Composer",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "composer/installers": "1.*",
+        "johnpbloch/wordpress": "*",
+        "wpackagist-theme/twentyfifteen": "*",
+        "wpackagist-plugin/ssl-insecure-content-fixer": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "public/wp",
+        "installer-paths": {
+            "public/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}

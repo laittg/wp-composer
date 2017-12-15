@@ -1,0 +1,12 @@
+.stfolder/
+logs/
+vendor/
+
+private/*
+!private/wp-config.sample.php
+
+public/wp/
+public/wp-content/*
+!public/wp-content/index.html
+
+composer.lock
