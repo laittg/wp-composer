@@ -1,4 +1,6 @@
 // syncthing.net //
 /.git
 /public/wp
+/public/wp-content/upgrade
+/public/wp-content/uploads
 /vendor

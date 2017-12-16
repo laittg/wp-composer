@@ -27,7 +27,11 @@ if ( file_exists( $wpcfg['dev'] ) ) {
 // Custom content directory
 // ========================
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
-define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
+if ( isset( $_SERVER['HTTP_HOST'] ) ) {
+    define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
+} else {
+    define( 'WP_CONTENT_URL', '/wp-content' );
+}
 
 // ====================================
 // DB charset, mostly leave it as it is
