@@ -1,0 +1,2 @@
+# Execute `wp db export` inside the backup folder to backup database
+path: ../public/wp

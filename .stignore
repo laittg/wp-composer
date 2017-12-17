@@ -1,5 +1,7 @@
 // syncthing.net //
 /.git
+!/backup/wp-cli.yml
+/backup/*
 /public/wp
 /public/wp-content/upgrade
 /public/wp-content/uploads
