@@ -14,6 +14,12 @@ ini_set( 'display_errors', E_ALL );
 define( 'WP_DEBUG_DISPLAY', true );
 define( 'WP_DEBUG', true );
 
+// ===========================
+// Autosave and Post Revisions
+// ===========================
+define( 'AUTOSAVE_INTERVAL', 90 );
+define( 'WP_POST_REVISIONS', 3 );
+
 // =========================
 // Disable automatic updates
 // =========================
